@@ -1,3 +1,5 @@
+**SERVER = serverweb1.1.py"**
+
 Server HTTP in Python usando socket e threading. Nella prima versione(serverweb1.0.py) il server era basato su http.server.SimpleHTTPSRequestHandler che gestisce automaticamente la connessione con il client, il bind, l'header dei messaggi, il mime... ho poi cambiato in corso d'opera passando ad implementare le socket in maniera manuale per poter gestire anche queste ultime richieste manualmente.
 Una volta avviato il server, verrà caricata la configurazione dal file yaml. Digitando l'indirizzo del pc del server:porta sul browser, si aprirà la pagina index.html. Per richiedere un'altra pagina bisogna cambiare l'url aggiungendo alla fine "/" e il nome della pagina.
 Il server puo gesire massimo 5 connessioni differenti tramite i threads
